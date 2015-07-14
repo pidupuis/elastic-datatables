@@ -1,0 +1,27 @@
+{
+  "name": "elastic-datatables",
+  "title": "Elastic Datatables",
+  "description": "Binds Jquery Datatables with ElasticSearch",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pidupuis/elastic-datatables",
+  "author": {
+    "name": "pidupuis",
+    "email": "pierredupuis@openmailbox.org",
+    "url": "https://github.com/pidupuis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pidupuis/elastic-datatables.git"
+  },
+  "bugs": "https://github.com/pidupuis/elastic-datatables/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pidupuis/elastic-datatables/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}

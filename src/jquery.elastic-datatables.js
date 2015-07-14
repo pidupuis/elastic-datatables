@@ -1,4 +1,14 @@
-$.fn.dataTable.elasticSearch = function ( opts ) {
+/*
+ * elastic-datatables
+ * https://github.com/pidupuis/elastic-datatables
+ *
+ * Copyright (c) 2015 pidupuis
+ * Licensed under the MIT license.
+ */
+
+(function($) {
+
+  $.fn.dataTable.elastic_datatables = function ( opts ) {
     // Configuration options
     var conf = $.extend( {
       index: '',
@@ -37,5 +47,6 @@ $.fn.dataTable.elasticSearch = function ( opts ) {
         });
       });
     };
-};
+  };
 
+}(jQuery));
