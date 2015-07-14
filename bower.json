@@ -1,0 +1,14 @@
+{
+  "name": "elastic-datatables",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pidupuis/elastic-datatables",
+  "authors": [
+    "pidupuis <pierredupuis@openmailbox.org>"
+  ],
+  "description": "Binds Jquery Datatables with ElasticSearch",
+  "keywords": [
+    "Jquery-datatables",
+    "ElasticSearch"
+  ],
+  "license": "MIT"
+}
