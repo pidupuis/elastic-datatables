@@ -1,5 +1,15 @@
 # Elastic Datatables
-Binds Jquery Datatables with ElasticSearch
+
+When dealing with [DataTables](https://github.com/DataTables/DataTables) and [ElasticSearch](https://www.elastic.co/), one can quickly think about two things:
+
+* By its ability to return almost instantaneously a set of result **and** the total amount of matching results, ElasticSearch is a perfect fit for [server-side processing](https://www.datatables.net/examples/data_sources/server_side.html)
+* But ElasticSearch is a search engine, not a server in which we can code as we want.
+
+So we can't simply give an ElasticSearch request to DataTables ajax config and hope for the pagination/filter/display to be handle automagically. We can't modify the server code so we need to fake the system. We need to develop the server-side magic on client-side.
+
+DataTables allow us to override the *fnServerData* function to have access to the internal state of our datatable before sending a request, which allows us to add the pagination/filter/display information to the ElasticSearch request. See [here](http://legacy.datatables.net/ref#fnServerData) for more informations.
+
+The fact is that in every case, the same code will be used for that. The DataTable parameters (*i.e. aoData.length*: the number of row to display) will always be used the same way to construct the ElasticSearch request (*i.e. { size: aoData.length }*). This is a door for automation, and this plug-in is made for it.
 
 ## Getting Started
 Download the [production version][min] or the [development version][max].
