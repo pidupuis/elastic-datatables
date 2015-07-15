@@ -1,12 +1,8 @@
 # Elastic Datatables
-
 Binds Jquery Datatables with ElasticSearch
 
 ## Getting Started
 Download the [production version][min] or the [development version][max].
-
-[min]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/jquery.elastic-datatables.min.js
-[max]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/jquery.elastic-datatables.js
 
 In your web page:
 
@@ -31,7 +27,13 @@ $('#example').dataTable( {
       index: 'test',
       type: 'test',
       client: client,
-      query: ''
+      body: {
+        query: {
+          match: {
+            title: 'test'
+          }
+        }
+      }
     } )
 } );
 </script>
@@ -40,8 +42,8 @@ $('#example').dataTable( {
 ## Documentation
 _(Coming soon)_
 
-## Examples
-_(Coming soon)_
-
 ## Release History
 _(Nothing yet)_
+
+[min]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/jquery.elastic-datatables.min.js
+[max]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/jquery.elastic-datatables.js
