@@ -5,8 +5,8 @@ Binds Jquery Datatables with ElasticSearch
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/elastic-datatables.min.js
-[max]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/elastic-datatables.js
+[min]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/jquery.elastic-datatables.min.js
+[max]: https://raw.github.com/pidupuis/elastic-datatables/master/dist/jquery.elastic-datatables.js
 
 In your web page:
 
