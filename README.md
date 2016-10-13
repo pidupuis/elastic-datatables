@@ -1,3 +1,10 @@
+
+## HELP REQUIRED
+
+I have no more time to maintain (and finish) this plugin. Any help will be welcome!
+
+______
+
 # Elastic Datatables
 
 When dealing with [DataTables](https://github.com/DataTables/DataTables) and [ElasticSearch](https://www.elastic.co/), one can quickly think about two things:
